@@ -69,8 +69,9 @@
 					<div class="breadcrubs__inner">
 						<div class="container _container">
 							<ul class="path">
-								<li><a href="index.html">Работа <img class="path__arrow" src="./img/arrow.svg" alt=""></a></li>
-								<li><a href="job.html">Все вакансии <img class="path__arrow" aria-current="page src="./img/arrow.svg" alt=""></a></li>
+								<li ><a  class="path__current" href="index.html">Работа</a></li>
+								<img class="path__arrow" src="./img/arrow.svg" alt="">
+								<li><a class="path__current" href="job.html">Все вакансии</a></li>
 							</ul>
 						</div>
 					</div>
@@ -80,21 +81,23 @@
         <div class="filters-header">
             <div class="filters-header__inputs">
                 <input class="filter-header__input" placeholder="Вакансия, ключевое слово, названи фирмы" type="text" id="searchInput">
+                <input  class="filter-header__input" type="text" id="city-filter" placeholder="Город">
                 <button class="filters-header__btn" id="searchButton">Найти</button>
             </div>
             <div class="filters-header__group">
                 <select class="select" id="country-filter">
-                    <option value="">All</option>
+                    <option value="">Все города</option>
                     <option value="Warszawa">Warszawa</option>
                     <option value="Gdansk">Gdansk</option>
                     <option value="Kraków">Kraków</option>
                     <option value="Słupsk">Słupsk</option>
                     <option value="Bydgoszcz">Bydgoszcz</option>
+                    <option value="Rzeszów">Rzeszów</option>
                   </select>
                 <select class="select" id="language-filter">
-                    <option value="">Любой</option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
+                    <option value="">Язык</option>
+                    <option value="Yes">Нужен</option>
+                    <option value="No">Не нужен</option>
                 </select>
             </div>
         </div>
@@ -142,6 +145,7 @@
 						</div>
 					</div>
 				</div>
+				
 				<button id="scrollBtn">
 					<svg viewBox="0 0 24 24">
 					  <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
