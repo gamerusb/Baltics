@@ -2656,6 +2656,69 @@ input[type=number] {
   transform: rotate(-90deg);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .noUi-target, .noUi-target * {
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
@@ -5747,8 +5810,6 @@ html {
   background-image: url(../img/daniel-mccullough-HtBlQdxfG9k-unsplash.jpg);
   height: 100vh;
   width: 100vw;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -5880,7 +5941,7 @@ html {
 }
 @media (any-hover: hover) {
   .content-main__button:hover {
-    background: rgba(153, 0, 255, 0.774);
+    background: rgba(255, 0, 0, 0.774);
     transition: all 0.4s;
     color: #F3F3F4;
   }
@@ -6433,6 +6494,12 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (max-width: 1282px) {
+  .blog {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 .blog .blog-page__main {
   display: flex;
