@@ -12,6 +12,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 	
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
@@ -35,7 +37,7 @@
 							<ul data-spollers="768, max" class="menu__list">
 								<li class="menu__item"><a href="index.html" class="menu__link">Dla pracodawcy</a></li>
 								<li class="menu__item"><a href="#firma" class="menu__link">O firmie</a></li>
-								<li class="menu__item"><a href="#oferta" class="menu__link">Oferta</a></li>
+								<li class="menu__item"><a href="oferta.html" class="menu__link">Oferta</a></li>
 								<li class="menu__item"><a href="#kontakt" class="menu__link">Kontakt</a></li>
 								<li class="menu__item"><a href="job.html" class="menu__link">Работа</a></li>
 							</ul>
@@ -78,8 +80,8 @@
 								<a href="work.html" data-da=".main-slider__body,991.98"
 									class="content-main__button btn">Skontaktuj sie
 								</a>
-								<a href="work.html" data-da=".main-slider__body,991.98"
-									class="content-main__button2 btn">Работа
+								<a href="work.html" role="button" data-da=".main-slider__body,991.98"
+									class="content-main__button2 btn ">Работа
 								</a>
 							</div>
 						</div>
@@ -143,7 +145,7 @@
 												<strong id="sum-value">2</strong>
 												<p class="calculator-output__p">Tygodni</p>
 											</div>
-											<div class="calculator-output__btn btn">
+											<div role="button" class="calculator-output__btn btn">
 												Sprawdzam
 											</div>
 										</div>
@@ -219,6 +221,9 @@
 					</section>
 				</div>
 			</section>
+
+			
+
 			<section id="firma" class="page__firma">
 				<div class="main-firma__container _container">
 					<h1 class="main-firma__title wow animate__fadeInUp">
