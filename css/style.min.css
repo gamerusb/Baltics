@@ -2391,7 +2391,12 @@ input[type=number] {
 .calculator-output__btn {
   border: 1px solid #1D114F;
   border-radius: 8px;
+  transition: all 0.5s ease-out;
   padding: 15px 50px;
+}
+.calculator-output__btn:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 
 .checkbox-header {
@@ -2654,69 +2659,6 @@ input[type=number] {
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
-}
-
-body.modal-open {
-  overflow: hidden;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-}
-
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .noUi-target, .noUi-target * {
@@ -5786,6 +5728,126 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .rollOut {
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
+}
+
+table {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 17px;
+  border-radius: 20px;
+  font-weight: 500;
+  border-spacing: 0;
+  text-align: center;
+  width: 450px;
+  height: 500px;
+}
+
+th {
+  background: #F05023;
+  color: white;
+  padding: 5px 25px;
+}
+
+th, td {
+  border-style: solid;
+  border-width: 0 3px 2px 0;
+  border-color: white;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+th:first-child {
+  border-top-left-radius: 20px;
+}
+
+th:last-child {
+  border-top-right-radius: 20px;
+  border-right: none;
+}
+
+td {
+  padding: 3px 20px;
+  background: #F7F6F4;
+}
+
+tr:last-child td:first-child {
+  border-radius: 0 0 0 15px;
+}
+
+tr:last-child td:last-child {
+  border-radius: 0 0 15px 0;
+}
+
+tr td:last-child {
+  border-right: none;
+}
+
+.oferta-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(201.52deg, rgba(83, 125, 197, 0.1) 0%, rgba(105, 22, 207, 0.1) 100%);
+}
+.oferta-main__logo {
+  position: relative;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.oferta-main__title {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 68px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.oferta-main__p {
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.oferta-title:before {
+  content: "";
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  left: 60%;
+  top: 138px;
+  filter: blur(90px);
+  background-color: #FB37FF;
+}
+
+.oferta-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.oferta-third {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.td__main {
+  background-color: red;
+  border-radius: 12px 12px 0px 0px;
 }
 
 html {
