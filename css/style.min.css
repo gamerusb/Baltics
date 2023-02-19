@@ -2044,9 +2044,14 @@ input:active {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 2300px) {
+@media (max-width: 2700px) {
   .swiper.mySwiper2 {
-    width: 65% !important;
+    width: 50% !important;
+  }
+}
+@media (max-width: 1990px) {
+  .swiper.mySwiper2 {
+    width: 80% !important;
   }
 }
 @media (max-width: 1190px) {
@@ -2662,6 +2667,11 @@ input[type=number] {
 @media (max-width: 2300px) {
   .swiper {
     width: 75% !important;
+  }
+}
+@media (max-width: 1990px) {
+  .swiper {
+    width: 85% !important;
   }
 }
 @media (max-width: 1520px) {
