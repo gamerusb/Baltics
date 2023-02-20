@@ -802,9 +802,9 @@ body.ie ._ibg img {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #fcf8f3;
+  background-color: #FFFFFF;
   z-index: 50;
-  border-bottom: 1px solid #F6F5F8;
+  border-bottom: 1px solid #FFFFFF;
   box-shadow: 1px 1px 5px rgba(29, 17, 79, 0.1);
 }
 .header__body {
@@ -2215,6 +2215,7 @@ input[type=number] {
 }
 
 .calculator {
+  position: relative;
   margin-top: 160px;
 }
 @media (max-width: 991.98px) {
@@ -2223,7 +2224,7 @@ input[type=number] {
     background: #F6F6F9;
     left: 0;
     position: relative;
-    padding-top: 20px;
+    padding-top: 50px;
   }
 }
 .calculator .calculator-header {
@@ -6061,27 +6062,6 @@ tr td:last-child {
   height: 50px;
 }
 
-.swiper2 {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide2 {
-  text-align: center;
-  font-size: 18px;
-  background: #ff0202;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide2 img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -6104,7 +6084,6 @@ html {
   background-image: url(../img/daniel-mccullough-HtBlQdxfG9k-unsplash.jpg);
   height: 100vh;
   position: relative;
-  top: 85px;
   width: 100vw;
   background-size: cover;
   background-position: center;
@@ -7177,7 +7156,7 @@ html {
 @media (max-width: 991.98px) {
   .card-b:hover {
     transform: none;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 }
 
