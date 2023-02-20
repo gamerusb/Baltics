@@ -2059,6 +2059,12 @@ input:active {
   color: #F3F3F4;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+@media (max-width: 400px) {
+  .swiper-krakow:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
 
 .swiper.mySwiper2 {
   width: 100%;
@@ -3181,6 +3187,12 @@ input[type=number] {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   border-radius: 10px;
   transform: scale(1.1);
+}
+@media (max-width: 991.98px) {
+  .filter .filte-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
 .filter .filte-card .card {
   width: 300px;
@@ -7117,7 +7129,7 @@ html {
 }
 @media (max-width: 991.98px) {
   .card-b:hover {
-    transform: translateY(0px);
+    transform: none;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   }
 }
