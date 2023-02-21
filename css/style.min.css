@@ -797,6 +797,9 @@ body.ie ._ibg img {
   top: 0;
   left: 0;
 }
+.header__mailo {
+  color: #000;
+}
 .header__wrapper {
   position: fixed;
   width: 100%;
